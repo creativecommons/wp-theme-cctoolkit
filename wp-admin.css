@@ -1,0 +1,36 @@
+
+/* Hide 2nd and 3rd instances of Language switch in admin */
+#post-body-content > ul.qtranxs-lang-switch-wrap:nth-of-type(2) {
+  border: 1px solid red;
+  display: none !important;
+}
+
+#postbox-container-2 .qtranxs-lang-switch-wrap,
+#postbox-container-2 #qtranxs-meta-box-lsb {
+  display: none;
+}
+
+
+
+/* Hide in ACF fields, like link, the lang switch
+   The one on top is enough */
+.multi-language-field .wp-switch-editor {
+  visibility: hidden !important;
+}
+
+.acf-label {
+  display: block;
+  line-height: 3em;
+}
+
+/* hide translate on ZIP downloads pages */
+
+.options_page_acf-options-downloads .qtranxs-lang-switch-wrap {
+  display: none !important;
+}
+
+ul.help { 
+   list-style-type: disc !important; 
+   list-style-position: outside !important; 
+   padding-left: 15px;
+}
