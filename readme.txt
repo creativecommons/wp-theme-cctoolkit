@@ -1,5 +1,5 @@
 === Creative Commons - Business Toolkit theme ===
-Contributors: cctimidrobot, hugosolar
+Contributors: cctimidrobot, hugosolar, joaoantunes
 Tags: CreativeCommons
 Requires at least: 4.5+
 Tested up to: 5.0.3
