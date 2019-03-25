@@ -1,0 +1,21 @@
+{
+    "name":"creativecommons/wp-theme-cctoolkit",
+    "description":"The Creative Commons Business Toolkit theme",
+    "type":"wordpress-theme",
+    "license":"GPL-2.0-or-later",
+    "authors": [
+        {
+            "name":"joaoantunes"
+        },
+        {
+            "name":"Timid Robot Zehta",
+            "email":"timid@creativecommons.org"
+        }
+    ],
+    "require": {
+        "composer/installers":"~1.0"
+    },
+    "extra": {
+        "installer-name":"cctoolkit"
+    }
+}
