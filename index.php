@@ -24,19 +24,19 @@ get_header();
         <div class="row">
           <!-- Logo -->
           <div class="col-md-6">
-            <h1><img src="/wp-content/themes/cctoolkit/img/logo/<? echo $logo_link ?>" class="img-responsive"/></h1>
+            <h1><img src="/wp-content/themes/cctoolkit/img/logo/<?= $logo_link ?>" class="img-responsive"/></h1>
           </div>
           <!-- Menus -->
           <div class="col-md-6">
             <div id="lang_switcher" class="hidden-xs">
-               <? the_widget('qTranslateXWidget', array('type' => 'list-item', 'hide-title' => true) ) ?>
+               <?php the_widget('qTranslateXWidget', array('type' => 'list-item', 'hide-title' => true) ) ?>
             </div>
             <nav class="hidden-xs">
               <ul>
-                <li><a href="#intro"><? echo $word_introduction ?></a></li>
-                <li><a href="#content"><? echo $word_how ?></a></li>
-                <li><a href="#links"><? echo $word_links ?></a></li>
-                <li><a href="#downloads"><? echo $word_downloads ?></a></li>
+                <li><a href="#intro"><?= $word_introduction ?></a></li>
+                <li><a href="#content"><?= $word_how ?></a></li>
+                <li><a href="#links"><?= $word_links ?></a></li>
+                <li><a href="#downloads"><?= $word_downloads ?></a></li>
               </ul>
             </nav>
 
@@ -48,7 +48,7 @@ get_header();
                 <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
   <img src="/wp-content/themes/cctoolkit/img/outline-language-24px.svg" /></button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <? the_widget('qTranslateXWidget', array('type' => 'list-item', 'hide-title' => true) ) ?>
+                  <?php the_widget('qTranslateXWidget', array('type' => 'list-item', 'hide-title' => true) ) ?>
                 </div>
               </div>
 
@@ -87,7 +87,7 @@ get_header();
               }
             ?>
 
-            <a href="<? echo $download_file_url ?>"><? echo $word_download_call_to_action ?></a>
+            <a href="<?= $download_file_url ?>"><?= $word_download_call_to_action ?></a>
           </p>
         </div>
 
@@ -95,7 +95,7 @@ get_header();
         <!-- Introduction text -->
         <div class="row" style="margin: 0 auto;">
           <div class="introduction_text col-md-6 col-xs-12 col-md-offset-3">
-            <? the_field('introduction', 'option'); ?>
+            <?php the_field('introduction', 'option'); ?>
           </div>
         </div>
       </section>
@@ -104,7 +104,7 @@ get_header();
       <section id="content" name="how">
         <div class="row">
             <div class="col-md-12">
-              <h2 name="how"><span><i class="material-icons">business_center</i><? echo $word_how_benefit ?></span></h2>
+              <h2 name="how"><span><i class="material-icons">business_center</i><?= $word_how_benefit ?></span></h2>
             </div>
          </div>
 
@@ -133,24 +133,24 @@ get_header();
                       <img src="<?php the_field('illustration')['url'] ?>" />
                     </div>
                     <div class="col-md-6">
-                      <h3><? the_title(); ?></h3>
+                      <h3><?php the_title(); ?></h3>
                       <p><?php the_field('text') ?></p>
                     </div>
                   </div>
-                <? } else { ?>
+                <?php } else { ?>
                   <div class="row item left">
                     <div class="col-md-4 visible-xs">
                         <img src="<?php the_field('illustration')['url'] ?>"/>
                     </div>
                     <div class="col-md-6 col-md-offset-1">
-                      <h3><? the_title(); ?></h3>
+                      <h3><?php the_title(); ?></h3>
                       <p><?php the_field('text') ?></p>
                     </div>
                     <div class="col-md-4 hidden-xs">
                         <img src="<?php the_field('illustration')['url'] ?>"/>
                     </div>
                  </div>
-                <? } ?>
+                <?php } ?>
 
                 
                 <?php
@@ -172,10 +172,10 @@ get_header();
 
       <!-- Call to Action -->
       <div class="call_to_action">
-        <p><? echo $word_for_more_information ?></p>
+        <p><?= $word_for_more_information ?></p>
         <p class="download">
           <i class="material-icons">cloud_download</i>
-          <a href="<? echo $download_file_url ?>"><? echo $word_download_call_to_action ?></a>
+          <a href="<?= $download_file_url ?>"><?= $word_download_call_to_action ?></a>
         </p>
       </div>
 
@@ -185,7 +185,7 @@ get_header();
           <div class="col-md-2">
           </div>
           <div class="col-md-4" id="links">
-            <h3 name="links"><span><i class="material-icons">link</i><? echo $word_links ?></span></h3>
+            <h3 name="links"><span><i class="material-icons">link</i><?= $word_links ?></span></h3>
               <?php 
 
               $posts = get_posts(array(
@@ -215,7 +215,7 @@ get_header();
             <?php endif; ?>
           </div>
           <div class="col-md-4" id="downloads">
-            <h3 name="downloads"><span><i class="material-icons">folder</i><? echo $word_downloads ?></span></h3>
+            <h3 name="downloads"><span><i class="material-icons">folder</i><?= $word_downloads ?></span></h3>
               <?php 
 
               $posts = get_posts(array(

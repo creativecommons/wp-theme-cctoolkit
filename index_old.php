@@ -12,17 +12,17 @@ get_header(); ?>
   <div class="row">
     <div id="title" class="col-sm-6">
       <h1>
-        <? if (qtranxf_getLanguage() == "en") { ?>
+        <?php if (qtranxf_getLanguage() == "en") { ?>
           CC Toolkit for Business
-        <? } elseif (qtranxf_getLanguage() == "es") { ?>
+        <?php } elseif (qtranxf_getLanguage() == "es") { ?>
           Herramientas CC para los Negocios
-        <? } elseif (qtranxf_getLanguage() == "pt") { ?>
+        <?php } elseif (qtranxf_getLanguage() == "pt") { ?>
           Toolkit CC para Negócios
-        <? } ?>
+        <?php } ?>
       </h1>
     </div>
     <div id="lang_switch" class="col-sm-6">
-      <? the_widget('qTranslateXWidget', array('type' => 'both', 'hide-title' => true, 'flags' => 'all') ) ?>
+      <?php the_widget('qTranslateXWidget', array('type' => 'both', 'hide-title' => true, 'flags' => 'all') ) ?>
     </div>
   </div>
 </div>
@@ -31,7 +31,7 @@ get_header(); ?>
 <div id="intro" class="container">
   <div class="row">
     <div id="intro_text" class="col-sm-6">
-      <? 
+      <?php 
         $my_postid = 1;//This is page id or post id
         $content_post = get_post($my_postid);
         $content = $content_post->post_content;
@@ -41,24 +41,24 @@ get_header(); ?>
         
         ?>
       <button type="button" class="btn btn-success">
-        <? if (qtranxf_getLanguage() == "en") { ?>
+        <?php if (qtranxf_getLanguage() == "en") { ?>
           Download
-        <? } elseif (qtranxf_getLanguage() == "es") { ?>
+        <?php } elseif (qtranxf_getLanguage() == "es") { ?>
           Descargar
-        <? } elseif (qtranxf_getLanguage() == "pt") { ?>
+        <?php } elseif (qtranxf_getLanguage() == "pt") { ?>
           Descarregar
-        <? } ?>
+        <?php } ?>
       </button>
     </div>
     <div id="intro_video" class="col-sm-6">
       <p>
-        <? if (qtranxf_getLanguage() == "en") { ?>
+        <?php if (qtranxf_getLanguage() == "en") { ?>
           EN YouTube video
-        <? } elseif (qtranxf_getLanguage() == "es") { ?>
+        <?php } elseif (qtranxf_getLanguage() == "es") { ?>
           ES Youtube Video con subtítulos
-        <? } elseif (qtranxf_getLanguage() == "pt") { ?>
+        <?php } elseif (qtranxf_getLanguage() == "pt") { ?>
           PT Youtube Video com legendas ou voiceover?
-        <? } ?>
+        <?php } ?>
       </p>
     </div>
   </div>
@@ -69,13 +69,13 @@ get_header(); ?>
   <div class="row">
     <div id="references" class="col-sm-6">
       <h3>
-        <? if (qtranxf_getLanguage() == "en") { ?>
+        <?php if (qtranxf_getLanguage() == "en") { ?>
           Links
-        <? } elseif (qtranxf_getLanguage() == "es") { ?>
+        <?php } elseif (qtranxf_getLanguage() == "es") { ?>
           Enlaces
-        <? } elseif (qtranxf_getLanguage() == "pt") { ?>
+        <?php } elseif (qtranxf_getLanguage() == "pt") { ?>
           Ligações
-        <? } ?>
+        <?php } ?>
       </h3>
       <!-- Links -->
         <?php 
@@ -108,13 +108,13 @@ get_header(); ?>
     </div>
     <div id="downloads" class="col-sm-6">
       <h3>
-        <? if (qtranxf_getLanguage() == "en") { ?>
+        <?php if (qtranxf_getLanguage() == "en") { ?>
           Other Downloads
-        <? } elseif (qtranxf_getLanguage() == "es") { ?>
+        <?php } elseif (qtranxf_getLanguage() == "es") { ?>
           Otras Descargas
-        <? } elseif (qtranxf_getLanguage() == "pt") { ?>
+        <?php } elseif (qtranxf_getLanguage() == "pt") { ?>
           Outros Descarregamentos
-        <? } ?>
+        <?php } ?>
       </h3>
       <!-- Downloads -->
         <?php 
@@ -153,7 +153,7 @@ get_header(); ?>
 
 <?// echo qtranxf_getLanguage(); ?>
 
-<? /*
+<?php /*
 $my_postid = 1;//This is page id or post id
 $content_post = get_post($my_postid);
 $content = $content_post->post_content;

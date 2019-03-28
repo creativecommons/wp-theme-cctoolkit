@@ -22,11 +22,11 @@ include 'translations.php';
         <div class="row desktop">
           <div class="col-md-6 col-xs-6 footer_description">
             <ul>
-              <li><? echo $word_by ?></li>
-              <li><? echo $word_coordination ?></li>
-              <li><? echo $word_spanish_credits ?></li>
-              <li><? echo $word_design_dev ?></li>
-              <li><? echo $word_licensed ?></li>
+              <li><?= $word_by ?></li>
+              <li><?= $word_coordination ?></li>
+              <li><?= $word_spanish_credits ?></li>
+              <li><?= $word_design_dev ?></li>
+              <li><?= $word_licensed ?></li>
             </ul>
           </div>
           <div class="col-md-5 col-xs-6 footer_links">
@@ -41,11 +41,11 @@ include 'translations.php';
         </div>
 
         <div class="row mobile">
-          <p><? echo $word_by ?><br><a href="https://creativecommons.org/">Creative Commons</a></p>
-          <p><? echo $word_coordination ?><br><a href="http://creativecommons.pt/">Creative Commons Portugal</a></p>
-          <p><? echo $word_spanish_credits ?><br><a href="https://www.creativecommons.org.py/">Creative Commons Paraguay</a></p>
-          <p><? echo $word_design_dev ?><br><a href="http://jplusplus.org/pt/">Journalism++</a></p>
-          <p><? echo $word_licensed ?><br><a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International (CC BY 4.0)</a></p>
+          <p><?= $word_by ?><br><a href="https://creativecommons.org/">Creative Commons</a></p>
+          <p><?= $word_coordination ?><br><a href="http://creativecommons.pt/">Creative Commons Portugal</a></p>
+          <p><?= $word_spanish_credits ?><br><a href="https://www.creativecommons.org.py/">Creative Commons Paraguay</a></p>
+          <p><?= $word_design_dev ?><br><a href="http://jplusplus.org/pt/">Journalism++</a></p>
+          <p><?= $word_licensed ?><br><a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International (CC BY 4.0)</a></p>
         </div>
       </footer>
 

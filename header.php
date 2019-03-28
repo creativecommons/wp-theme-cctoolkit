@@ -14,7 +14,7 @@ include 'translations.php';
 <head>
 
   <meta charset="<?php bloginfo( 'charset' ); ?>">
-  <title><? the_field('page_title', 'option'); ?></title>
+  <title><?php the_field('page_title', 'option'); ?></title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
