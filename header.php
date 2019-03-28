@@ -6,7 +6,7 @@
  */
 
 include 'translations.php';
-  
+
 ?>
 
 <!DOCTYPE html>

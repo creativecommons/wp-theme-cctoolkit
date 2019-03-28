@@ -16,7 +16,7 @@ if (qtranxf_getLanguage() == "en") {
     $word_coordination = "Project Coordination";
     $word_design_dev = "Design and Development";
     $word_licensed = "This work is licensed under";
-	$word_spanish_credits = "Spanish Version";
+    $word_spanish_credits = "Spanish Version";
 
 
 /* Spanish */
@@ -35,7 +35,7 @@ if (qtranxf_getLanguage() == "en") {
     $word_coordination = "Coordinacion de Proyeto";
     $word_design_dev = "Diseño y Desarrollo";
     $word_licensed = "Este trabajo está licenciado bajo";
-	$word_spanish_credits = "Versión Española";
+    $word_spanish_credits = "Versión Española";
 
 
 /* Portuguese */
@@ -54,10 +54,8 @@ if (qtranxf_getLanguage() == "en") {
     $word_coordination = "Coordenação de Projecto";
     $word_design_dev = "Design e Desenvolvimento";
     $word_licensed = "Este trabalho está licenciado sob";
-	$word_spanish_credits = "Versão Espanhola";
+    $word_spanish_credits = "Versão Espanhola";
 
 }
 
 ?>
-
-

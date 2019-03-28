@@ -31,14 +31,14 @@ get_header(); ?>
 <div id="intro" class="container">
   <div class="row">
     <div id="intro_text" class="col-sm-6">
-      <?php 
+      <?php
         $my_postid = 1;//This is page id or post id
         $content_post = get_post($my_postid);
         $content = $content_post->post_content;
         $content = apply_filters('the_content', $content);
         $content = str_replace(']]>', ']]&gt;', $content);
         echo $content;
-        
+
         ?>
       <button type="button" class="btn btn-success">
         <?php if (qtranxf_getLanguage() == "en") { ?>
@@ -78,7 +78,7 @@ get_header(); ?>
         <?php } ?>
       </h3>
       <!-- Links -->
-        <?php 
+        <?php
 
           $posts = get_posts(array(
             'posts_per_page'  => -1,
@@ -86,22 +86,22 @@ get_header(); ?>
           ));
 
           if( $posts ): ?>
-            
+
             <ul>
-              
-            <?php foreach( $posts as $post ): 
-              
+
+            <?php foreach( $posts as $post ):
+
               setup_postdata( $post )
-              
+
             ?>
               <li>
                 <a href="<?php strip_tags(the_content()); ?>" target="_blank"><?php the_title(); ?></a>
               </li>
-            
+
             <?php endforeach; ?>
-            
+
           </ul>
-            
+
           <?php wp_reset_postdata(); ?>
 
         <?php endif; ?>
@@ -117,7 +117,7 @@ get_header(); ?>
         <?php } ?>
       </h3>
       <!-- Downloads -->
-        <?php 
+        <?php
 
           $posts = get_posts(array(
             'posts_per_page'  => -1,
@@ -125,27 +125,27 @@ get_header(); ?>
           ));
 
           if( $posts ): ?>
-            
+
             <ul>
-              
-            <?php foreach( $posts as $post ): 
-              
+
+            <?php foreach( $posts as $post ):
+
               setup_postdata( $post )
-              
+
             ?>
               <li>
                 <a href="<?php strip_tags(the_content()); ?>" target="_blank"><?php the_title(); ?></a>
               </li>
-            
+
             <?php endforeach; ?>
-            
+
           </ul>
-            
+
           <?php wp_reset_postdata(); ?>
 
         <?php endif; ?>
     </div>
-  </div>  
+  </div>
 
 </div>
 

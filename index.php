@@ -109,9 +109,9 @@ get_header();
          </div>
 
          <div class="row item right">
-  
+
           <div class="col-md-12">
-            <?php 
+            <?php
 
               $posts = get_posts(array(
                 'posts_per_page'  => -1,
@@ -119,8 +119,8 @@ get_header();
               ));
 
               $i = 0;
-              if( $posts ): 
-                foreach( $posts as $post ): 
+              if( $posts ):
+                foreach( $posts as $post ):
                   setup_postdata( $post );
                   $i++;
                 ?>
@@ -152,12 +152,12 @@ get_header();
                  </div>
                 <?php } ?>
 
-                
+
                 <?php
                   endforeach;
                 ?>
-                
-                
+
+
               <?php wp_reset_postdata(); ?>
 
             <?php endif; ?>
@@ -186,7 +186,7 @@ get_header();
           </div>
           <div class="col-md-4" id="links">
             <h3 name="links"><span><i class="material-icons">link</i><?= $word_links ?></span></h3>
-              <?php 
+              <?php
 
               $posts = get_posts(array(
                 'posts_per_page'  => -1,
@@ -194,29 +194,29 @@ get_header();
               ));
 
               if( $posts ): ?>
-                
+
                 <ul>
-                  
-                <?php foreach( $posts as $post ): 
-                  
+
+                <?php foreach( $posts as $post ):
+
                   setup_postdata( $post )
-                  
+
                 ?>
                   <li>
                     <a href="<?php the_field('url'); ?>" target="_blank"><?php the_title(); ?></a>
                   </li>
-                
+
                 <?php endforeach; ?>
-                
+
               </ul>
-                
+
               <?php wp_reset_postdata(); ?>
 
             <?php endif; ?>
           </div>
           <div class="col-md-4" id="downloads">
             <h3 name="downloads"><span><i class="material-icons">folder</i><?= $word_downloads ?></span></h3>
-              <?php 
+              <?php
 
               $posts = get_posts(array(
                 'posts_per_page'  => -1,
@@ -224,13 +224,13 @@ get_header();
               ));
 
               if( $posts ): ?>
-                
+
                 <ul>
-                  
-                <?php foreach( $posts as $post ): 
-                  
+
+                <?php foreach( $posts as $post ):
+
                   setup_postdata( $post )
-                  
+
                 ?>
                   <li>
                     <?php
@@ -242,11 +242,11 @@ get_header();
                     ?>
                     <a href="<?php echo $download_link ?>" target="_blank"><?php the_title(); ?></a>
                   </li>
-                
+
                 <?php endforeach; ?>
-                
+
               </ul>
-                
+
               <?php wp_reset_postdata(); ?>
 
             <?php endif; ?>

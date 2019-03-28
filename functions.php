@@ -21,24 +21,24 @@
 
   // Add Options Page
   if( function_exists('acf_add_options_page') ) {
-  
+
     acf_add_options_page();
     acf_add_options_sub_page('Video');
     acf_add_options_sub_page('Text');
     acf_add_options_sub_page('Downloads');
-  
+
   }
 
 
   // Dashboard help
     add_action('wp_dashboard_setup', 'my_custom_dashboard_widgets');
-      
+
     function my_custom_dashboard_widgets() {
       global $wp_meta_boxes;
-       
+
       wp_add_dashboard_widget('custom_help_widget', 'Documentation', 'custom_dashboard_help');
     }
-     
+
     function custom_dashboard_help() {
       echo '<p>
               <ul class="help">
