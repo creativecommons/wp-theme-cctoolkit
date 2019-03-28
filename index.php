@@ -125,7 +125,7 @@ get_header();
                   $i++;
                 ?>
 
-                <?
+                <?php
                  if ($i & 1) {
                 ?>
                   <div class="row item right">
